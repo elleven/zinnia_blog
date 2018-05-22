@@ -12,7 +12,7 @@ from django.utils.text import Truncator
 from zinnia.settings import PREVIEW_MAX_WORDS
 from zinnia.settings import PREVIEW_MORE_STRING
 from zinnia.settings import PREVIEW_SPLITTERS
-
+from zinnia.settings import PREVIEW_DISABLE
 
 @python_2_unicode_compatible
 class HTMLPreview(object):
@@ -26,8 +26,8 @@ class HTMLPreview(object):
                  more_string=PREVIEW_MORE_STRING):
         self._preview = None
 
-        self.lead = lead
-        self.content = content
+        self.lead = '' if PREVIEW_DISABLE else lead
+        self.content = '' if PREVIEW_DISABLE else content
         self.splitters = splitters
         self.max_words = max_words
         self.more_string = more_string
