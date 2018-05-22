@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3d52739-84aa-4243-8ef8-84f42fe986a9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/zinnia/preview.py" beforeDir="false" afterPath="$PROJECT_DIR$/zinnia/preview.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zinnia/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/zinnia/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="preview.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="preview.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zinnia/preview.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
@@ -24,6 +24,11 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
@@ -161,6 +166,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
