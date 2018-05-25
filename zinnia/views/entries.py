@@ -8,6 +8,7 @@ from zinnia.views.mixins.entry_cache import EntryCacheMixin
 from zinnia.views.mixins.entry_preview import EntryPreviewMixin
 from zinnia.views.mixins.entry_protection import EntryProtectionMixin
 from zinnia.views.mixins.templates import EntryArchiveTemplateResponseMixin
+from zinnia.views.mixins.entry_pageview import EntryPageViewMixin
 
 
 class EntryDateDetail(ArchiveMixin,
@@ -30,6 +31,7 @@ class EntryDateDetail(ArchiveMixin,
 class EntryDetail(EntryCacheMixin,
                   EntryPreviewMixin,
                   EntryProtectionMixin,
+                  EntryPageViewMixin,
                   EntryDateDetail):
     """
     Detailled archive view for an Entry with password

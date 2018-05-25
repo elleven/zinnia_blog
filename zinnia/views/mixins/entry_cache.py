@@ -15,4 +15,5 @@ class EntryCacheMixin(object):
         if self._cached_object is None:
             self._cached_object = super(EntryCacheMixin, self).get_object(
                 queryset)
+
         return self._cached_object
