@@ -12,7 +12,7 @@ SAVE_PING_EXTERNAL_URLS = getattr(settings, 'ZINNIA_PING_EXTERNAL_URLS', True)
 
 TRANSLATED_URLS = getattr(settings, 'ZINNIA_TRANSLATED_URLS', False)
 
-COPYRIGHT = getattr(settings, 'ZINNIA_COPYRIGHT', 'Zinnia')
+COPYRIGHT = getattr(settings, 'ZINNIA_COPYRIGHT', 'Zinnia_Ell')
 
 PAGINATION = getattr(settings, 'ZINNIA_PAGINATION', 10)
 ALLOW_EMPTY = getattr(settings, 'ZINNIA_ALLOW_EMPTY', True)

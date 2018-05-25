@@ -258,6 +258,7 @@ class DiscussionsEntry(models.Model):
     trackback_count = models.IntegerField(
         _('trackback count'), default=0)
 
+
     @property
     def discussions(self):
         """
@@ -550,6 +551,30 @@ class DetailTemplateEntry(models.Model):
         abstract = True
 
 
+class PageViewEntry(models.Model):
+    """
+    Abstract model class to show page views of  entries.
+    """
+    page_view = models.IntegerField(_('page views'), default=0)
+
+    @property
+    def page_views(self):
+        """
+        Return int of page views.
+        """
+        return self.page_view
+
+#    @page_views.setter
+#    def page_views(self, value):
+#        """
+#        set page view
+#        """
+#        self.page_view = value
+
+    class Meta:
+        abstract = True
+
+
 class AbstractEntry(
         CoreEntry,
         ContentEntry,
@@ -565,7 +590,8 @@ class AbstractEntry(
         LoginRequiredEntry,
         PasswordRequiredEntry,
         ContentTemplateEntry,
-        DetailTemplateEntry):
+        DetailTemplateEntry,
+        PageViewEntry):
     """
     Final abstract entry model class assembling
     all the abstract entry model classes into a single one.
