@@ -85,6 +85,9 @@ class CoreEntry(models.Model):
     last_update = models.DateTimeField(
         _('last update'), default=timezone.now)
 
+    featured = models.BooleanField(
+                _('featured'), default=False)
+
     objects = models.Manager()
     published = EntryPublishedManager()
 
@@ -189,7 +192,7 @@ class CoreEntry(models.Model):
         CoreEntry's meta informations.
         """
         abstract = True
-        ordering = ['-publication_date']
+        ordering = ['-featured','-publication_date']
         get_latest_by = 'publication_date'
         verbose_name = _('entry')
         verbose_name_plural = _('entries')
@@ -436,15 +439,15 @@ class ImageEntry(models.Model):
         abstract = True
 
 
-class FeaturedEntry(models.Model):
-    """
-    Abstract model class to mark entries as featured.
-    """
-    featured = models.BooleanField(
-        _('featured'), default=False)
-
-    class Meta:
-        abstract = True
+#class FeaturedEntry(models.Model):
+#    """
+#    Abstract model class to mark entries as featured.
+#    """
+#    featured = models.BooleanField(
+#        _('featured'), default=False)#
+#
+#    class Meta:
+#        abstract = True
 
 
 class AuthorsEntry(models.Model):
@@ -583,7 +586,6 @@ class AbstractEntry(
         LeadEntry,
         ExcerptEntry,
         ImageEntry,
-        FeaturedEntry,
         AuthorsEntry,
         CategoriesEntry,
         TagsEntry,

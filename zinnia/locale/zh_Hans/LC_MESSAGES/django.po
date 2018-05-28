@@ -154,19 +154,19 @@ msgstr "把所选的日志放在当前日期的顶部"
 
 #: admin/entry.py:326
 msgid "Selected entries are now marked as featured."
-msgstr "已将所选日志标记为特色"
+msgstr "已将所选日志标记为置顶"
 
 #: admin/entry.py:327
 msgid "Mark selected entries as featured"
-msgstr "把所选的日志标记为特色"
+msgstr "把所选的日志标记为置顶"
 
 #: admin/entry.py:335
 msgid "Selected entries are no longer marked as featured."
-msgstr "所选日志现已移除特色标记"
+msgstr "所选日志现已移除置顶"
 
 #: admin/entry.py:337
 msgid "Unmark selected entries as featured"
-msgstr "把所选日志移除特色标记"
+msgstr "把所选日志移除置顶"
 
 #: admin/entry.py:358
 #, python-format
@@ -500,7 +500,7 @@ msgstr ""
 
 #: models_bases/entry.py:459
 msgid "featured"
-msgstr "特色"
+msgstr "置顶"
 
 #: models_bases/entry.py:474
 msgid "authors"

@@ -12,5 +12,5 @@ class EntryPageViewMixin(object):
         """
         obj = super(EntryPageViewMixin, self).get_object(queryset)
         obj.page_view += 1
-        obj.save()
+        obj.save(update_fields=['page_view'])
         return obj
